@@ -1,0 +1,36 @@
+body {
+    font: 100%/1.5 system-ui;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 100ch;
+    margin-inline: max(1em, (100% - 100ch) / 2);
+  }
+  .button {
+    padding: 10px 15px;
+    background-color: #495765;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .button:hover {
+    background-color: #0056b3;
+  }
+
+  .dropdown-wrapper {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    padding: 0 10px; /* Keep side padding */
+  }
+
+  .dropdown-wrapper.open {
+    max-height: 500px; /* Large enough to fit your content */
+  }
+
+  .dropdown-content {
+    padding: 10px 0; /* Top and bottom padding inside content */
+  }
